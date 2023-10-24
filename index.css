@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 790px;
+    background: linear-gradient(106.89deg, #191E32 0%, rgba(82, 95, 100, 0.8) 99.1%);
+    z-index: 0;
+}
+.background{
+    top: 0;
+    background-image: url(./img/Background.png);
+    width: 100%;
+    height: 790px;
+    z-index: -1;
+
+}
+
+header{
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 0;
+    padding: 2rem 9%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+}
+.logo span{
+    font-weight: 700;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-list li a{
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+.nav-list a.active{
+    color: white;
+    font-weight: 700;
+}
+
+
+/* Content */
+.container{
+    display: flex;
+    padding: 0rem 9%;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    z-index: inherit;
+    width: 50%;
+    gap: 30px;
+    justify-content: center;
+}
+
+.content h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+.content h2{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 37.5px;
+}
+
+.learnBtn{
+    width: 154px;
+    height: 48px;
+    border-radius: 0.5rem;
+    background: #688983;
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.img-content{
+    margin-top: 10rem;
+    width: 50%;
+    z-index: inherit;
+}
+
+.img-circle{
+    width: 700px;
+    height: 700px;
+    border-radius: 355px;
+    background: rgba(196, 196, 196, 1);
+    z-index: 5;
+}
+
+.img-content img{
+    width: 100%;
+    height: auto;
+    top: 144px;
+    border-radius: 356.5px;
+    object-fit: cover;
+}
+
+
+/* Services */
+.service::before{
+    content: "";
+    position: absolute;
+    top: 792px;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    height: 792px;
+    background: linear-gradient(0deg, #F0E9D2 0%, rgba(240, 233, 210, 0.70) 100%);
+    z-index: 0;
+}
+
+.service{
+    background: url(./img/Background-Services.png);
+    width: 100%;
+    height: 792px;
+    z-index: -1;
+}
+
+.sContainer{
+    display: flex;
+    height: 792px;
+    flex-direction: column;
+    z-index: 5;
+    justify-content: center;
+}
+
+.sContainer h1{
+    color: #191E32;
+    text-align: center;
+    font-family: "Raleway",sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: inherit;
+}
+
+.s-content{
+    display: flex;
+    flex-direction: row;
+    z-index: inherit;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 9%;
+    margin-top: 4rem;
+}
+
+.s-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s-item img{
+    width: auto;
+    height: auto;
+}
+
+.circle-border {
+    background-color: white;
+    border-radius: 10rem;
+    box-sizing: border-box;
+    padding: 5rem;
+    text-align: center;
+    width: 240px;
+    height: auto;
+}
+
+.s-item h1{
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sBtn{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    width: 141px;
+    height: 50px;
+    border: 1px;
+    border: 1px solid rgba(104, 137, 131, 1);
+    color: rgba(104, 137, 131, 1);
+    margin-top: 2rem;
+}
